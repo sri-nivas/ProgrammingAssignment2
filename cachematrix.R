@@ -11,12 +11,12 @@ makeCacheMatrix <- function(x = matrix()) {
     #  m <<- matrix(x,i,i)
     
     set <- function (y) {
-      x <- y
+      x <<- y
       im <<- NULL
       #  i <- sqrt(length(x))
       #  m <<- matrix(x,i,i)
     }
-    get <- function() m
+    get <- function() x
     
     setmatrix <- function(solve) im <<- solve
     getmatrix <- function() im
